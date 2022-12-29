@@ -1,0 +1,5 @@
+<% if @order.errors.any? %>
+  alert("not valid.")
+<% else %>
+  $('.cart-text').replaceWith('<%= j render 'layouts/cart_text' %>');
+<% end %>
