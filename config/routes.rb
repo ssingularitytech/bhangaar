@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :landings
   mount RailsAdmin::Engine => '/superadmin', as: 'rails_admin'
   devise_for :users
   namespace :admin do
